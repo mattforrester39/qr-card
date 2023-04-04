@@ -1,0 +1,85 @@
+:root {
+  --primary--color--100: rgb(255, 255, 255);
+  --primary--color--200: rgb(213, 225, 239);
+  --primary--color--300: rgb(125, 136, 158);
+  --primary--color--500: rgb(56, 136, 255);
+  --primary--color--400: rgb(44, 125, 250);
+  --primary--color--700: rgb(31, 49, 79);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary--color--200);
+  margin: 9.5rem auto;
+  height: 100vh;
+}
+
+#card-wrapper {
+  background-color: var(--primary--color--100);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 20rem;
+  height: 31.25rem;
+  border-radius: 1.2rem;
+  filter: drop-shadow(0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+}
+
+#qr-code-container {
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+#qr-code-container,
+#card-info-container {
+  width: 18rem;
+}
+
+#qr-code-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+}
+
+#card-info-container {
+  padding-left: 1.5rem;
+  letter-spacing: 0.19px;
+}
+
+#card-info-header {
+  color: rgb(31, 49, 79);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 0.5rem 0 1rem 0;
+}
+
+#card-info-description {
+  color: var(--primary--color--300);
+  font-size: 0.938rem;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+#darkmode-button {
+  position: absolute;
+  right: 16px;
+  bottom: 2px;
+  transition: transform 0.8s ease-in-out;
+}
+
+#darkmode-button:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.dark-mode {
+  background-color: #1f314f;
+  color: #ffffff;
+}
